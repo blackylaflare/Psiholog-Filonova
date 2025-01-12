@@ -1,0 +1,540 @@
+@font-face {
+    font-family: 'Roboto'; 
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'RobotoB'; 
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype'); 
+    font-weight: bold; 
+    font-style: normal; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.4;
+    min-width: 320px;
+    height: auto;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: #21b4485a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-color: #51c37f;
+    padding: 20px 0 20px;
+    margin-bottom: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    margin-top: 70px;
+}
+
+.nav {
+    width: 100%;
+    height: 70px;
+}
+
+.nav .container-nav {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo img {
+    margin-left: 50px;
+}
+
+.nav-menu li a {
+    display: inline-block;
+    position: relative;
+    color: #000;
+    opacity: 0.6;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 0 15px 4px;
+    transition: all 600ms ease-in-out;
+    font-family: 'Roboto','RobotoB', sans-serif;   
+}
+
+.nav-menu li a:hover {
+    opacity: 1;
+}
+
+.nav-menu a::after {
+    content: ""; 
+    position: absolute; 
+    bottom: 0; 
+    left: 10px; 
+    width: 0%; 
+    height: 2px; 
+    background-color: #eaeaea; 
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-menu a:hover::after {
+    width: 45px; 
+}
+
+
+.nav-menu li  {
+    display: inline-block
+}
+
+.nav-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+
+.bnt-nav {
+    text-decoration: none;
+     margin-left: 90px;
+     padding: 30px 30px;
+     background-color: #068f3a;
+     color: #000;
+     border-radius: 100px;
+     font-family: 'Roboto','RobotoB', sans-serif;
+     transition: background-color 0.6s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.bnt-nav:hover {
+    background-color: #106f3e;
+    transform: scale(1.1);
+}
+
+.nav-logo {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    color: #000000;
+    transition: all 300ms ease-in-out;
+}
+
+.nav-logo:hover {
+    color: #063a15;
+}
+
+.hero-section {
+    background-color: #214b33;
+    padding: 45px 0;
+    margin-bottom: 70px;
+}
+
+
+.hero-section h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 80px;
+    font-family: 'RobotoB', sans-serif;
+}
+
+.hero-section__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-section__flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section li {
+    line-height: 30px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hero-section li:last-child {
+    margin-bottom: 45px;
+}
+
+.hero-section ul {
+    width: 500px;
+}
+
+.hero-section a {
+    text-decoration: none;
+    padding: 12px 17px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    margin-left: 410px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #068f3a;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.hero-section a:hover { 
+	background: #106f3e;
+}
+
+.services {
+    background-color: #1e5127;
+    padding: 45px 0;
+    margin-bottom: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 80px;
+    font-family: 'RobotoB', sans-serif;
+}
+
+.services__flex__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__items__img {
+    margin-bottom: 20px;
+}
+
+.services__flex__menu h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+ .services__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__flex__menu a {
+    text-decoration: none;
+    color: black;
+    transition: ease-in-out 400ms;
+}
+
+.services__flex__menu a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.services__items__img__check {
+    margin-right: 10px;
+}
+
+
+.form-section h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 80px;
+    font-family: 'RobotoB', sans-serif;
+}
+
+.form-section {
+    padding: 50px 0;           /* Внутренние отступы секции */
+    background-color: #214b33; /* Лёгкий фон */
+    margin-bottom: 70px;
+  }
+  
+  .container {
+    display: flex;           /* Включаем флексы для контейнера */
+    flex-direction: column;  /* Располагаем элементы вертикально */
+         /* Контент занимает 70% ширины */
+  }
+  
+  /* Стили для формы */
+  .contact-form {
+    width: 40%;              /* Форма занимает 30% ширины секции */
+    display: flex;           /* Включаем Flexbox для формы */
+    flex-direction: column;  /* Элементы формы располагаются вертикально */
+    padding: 20px;           /* Внутренние отступы */
+    background-color: #06431abb; /* Белый фон */
+    border-radius: 10px;     /* Скруглённые углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+  }
+  
+  /* Поля ввода и текстовая область */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;               /* Поля занимают всю ширину формы */
+    padding: 10px;             /* Внутренние отступы */
+    margin-bottom: 15px;       /* Отступы между полями */
+    border: 1px solid #ccc;    /* Рамка вокруг полей */
+    border-radius: 5px;        /* Скруглённые углы */
+    font-size: 16px;           /* Размер текста */
+    box-sizing: border-box;    /* Включаем отступы и рамки в размер поля */
+    background-color: #214b33;
+  }
+  
+  /* Кнопка отправки */
+  .submit-btn {
+    width: 100%;               /* Кнопка на всю ширину */
+    padding: 15px;             /* Внутренние отступы */
+    background-color: #4CAF50; /* Цвет кнопки */
+    color: #fff;               /* Белый текст */
+    border: none;              /* Без рамки */
+    border-radius: 5px;        /* Скруглённые углы */
+    font-size: 18px;           /* Размер текста */
+    cursor: pointer;           /* Курсор в виде руки */
+    transition: background-color 0.3s ease-in-out; /* Плавный переход цвета */
+  }
+  
+  .submit-btn:hover {
+    background-color: #1f6822; /* Более тёмный цвет при наведении */
+  }
+  
+  /* Метки */
+  .contact-form label {
+    font-size: 18px;           /* Размер текста */
+    margin-bottom: 7px;        /* Отступ под меткой */
+    display: block;            /* Метка занимает всю строку */
+  }
+  
+  /* Плейсхолдеры */
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #888;               /* Цвет текста плейсхолдера */
+    font-style: italic;        /* Курсив */
+  }
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form button:focus {
+  outline: none;
+  border: 2px solid #4CAF50; /* Зелёная рамка */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Лёгкая подсветка */
+}
+
+.form-wrapper {
+    display: flex; /* Flex-контейнер */
+    align-items: center; /* Выравнивание по вертикали */
+    justify-content: space-around; /* Равномерное распределение */
+    max-width: 80%; /* Ограничиваем ширину */
+    gap: 20px; /* Промежуток между картинкой и формой */
+    flex-direction: row-reverse; /* Меняем порядок: картинка справа */
+  }
+
+  .form-image {
+    width: 30%; /* Картинка занимает 30% контейнера */
+    border-radius: 10px; /* Скругляем углы */
+    object-fit: cover; /* Уменьшаем или увеличиваем изображение, сохраняя пропорции */
+  }
+
+.footer {
+    background-color: #51c37f;
+}
+
+.footer img {
+    transform: scale(1.5);
+}
+
+.footer__flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__flex ul {
+    display: flex;
+    align-items: center;
+}
+
+.footer__flex li {
+    margin-left: 80px;
+}
+
+.item-telegram {
+    transition:  transform 400ms ease-in-out; 
+}
+
+.item-telegram:hover {
+    transform: rotate(20deg);
+}
+
+.item-instagram {
+    transition: all 400ms ease-in-out;
+}
+
+.item-instagram:hover {
+    transform: scale(1.3);
+}
+
+
+
+
+@media (max-width: 1070px) {
+    .hero-section li {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .hero-section a {
+        margin-left: 300px;
+    }
+
+    .hero-section h2 {
+        font-size: 30px;
+    }
+
+    .services__flex__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .services__flex__menu li {
+        width: 50%;
+    }
+
+    .services__flex__menu a {
+        margin-bottom: 50px;
+    }
+
+    .services__flex__menu h3 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 930px) {
+    .hero-section img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .form-image {
+        display: none;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .nav-menu li a {
+        padding: 0 10px;
+        font-size: 18px;
+    }
+
+    .bnt-nav {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-logo img {
+        margin-left: 0;
+    }
+
+    .bnt-nav {
+        padding: 20px;
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 720px) {
+    .hero-section img {
+        display: none;
+    }
+
+    .hero-section li {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .hero-section h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 680px) {
+    .services__flex__menu li {
+        width: 100%;
+    }
+    .form-section h2 {
+        font-size: 30px;
+    }
+
+    .bnt-nav {
+       display: none;
+    }
+
+    .nav-menu li a {
+        display: none;
+    }
+
+    .nav .container-nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-logo img {
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section a {
+        margin-left: 150px;
+        font-size: 12px;
+        padding: 8px 14px;;
+    }
+
+    .hero-section li {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .hero-section h2 {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    .services h2 {
+        font-size: 28px;
+    }
+
+    .form-section h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-section h2 {
+        font-size: 23px;
+    }
+
+    .hero-section a {
+        margin: 0 auto;
+    }
+
+    .form-section h2 {
+        font-size: 26px;
+    }
+
+    .contact-form input {
+       
+    }
+}
+
+@media (max-width: 350px) {
+    .hero-section li {
+        font-size: 15px;
+    }
+}
